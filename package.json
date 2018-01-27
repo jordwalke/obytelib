@@ -19,7 +19,7 @@
     "@opam/ocamlbuild": "*"
   },
   "peerDependencies": {
-    "ocaml": "4.4.x"
+    "ocaml": ">=4.4.0"
   },
   "devDependencies": {
     "@opam/merlin": "^3.0.5",
