@@ -1,0 +1,29 @@
+{
+  "name": "obytelib",
+  "version": "1.2",
+  "description": "Obytelib",
+  "author": "Benoît Vaugon",
+  "license": "NONE",
+  "esy": {
+    "build": [
+      ["./configure", "-prefix", "#{self.install}"],
+      ["make", "all"]
+    ],
+    "install": [
+      ["make", "install"]
+    ],
+    "buildsInSource": "true"
+  },
+  "dependencies": {
+    "@opam/ocamlfind": "*",
+    "@opam/ocamlbuild": "*"
+  },
+  "peerDependencies": {
+    "ocaml": "4.4.x"
+  },
+  "devDependencies": {
+    "@opam/merlin": "^3.0.5",
+    "ocaml": "~4.6.000"
+  },
+  "private": true
+}
